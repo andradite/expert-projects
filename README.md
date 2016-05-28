@@ -32,8 +32,8 @@ javac: Calls the java development environment.
 
 jirb: Calls the java interactive ruby bash/console.  
 jruby: Calls the jruby runtime environment.  
-jrubyb: Calls the ruby-to-java build environment.  
-jrubyc: Calls the jruby development environment.  
+jrubyc --java: Calls the ruby-to-java build environment.  
+jrubyc --javac: Calls the jruby development environment.  
 
 ###Common Commands
 #####setProject
