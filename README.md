@@ -35,18 +35,15 @@ jruby: Calls the jruby runtime environment.
 jrubyb: Calls the ruby-to-java build environment.  
 jrubyc: Calls the jruby development environment.  
 
-###Custom Commands
+###Common Commands
 #####setProject
     echo "project_path=\"${current.project.path}\"" >> ~/.bashrc &&
     echo "project=\"${current.project.relpath}\"" >> ~/.bashrc
-#####setCommands
-    echo "jruby=\"java -jar jruby\"" >> ~/.bashrc &&
-    echo "jirb=\"java -jar jruby -S jirb\"" >> ~/.bashrc &&
-    echo "jrubyb=\"java -jar jruby -S jrubyc --java\"" >> ~/.bashrc &&
-    echo "jrubyc=\"java -jar jruby -S jruby --javac\"" >> ~/.bashrc
 #####runProject
-    $jruby $project_path/src/$project.rb
+    jruby $project_path/src/main.rb
+#####testProject
+    jruby $project_path/test/run.rb
 #####buildProject
-    $jrubyb $project_path/src/$project.rb $project_path/src && mv /projects/$project.java $project_path/src/$project.java
+    jrubyc --java $project_path/src/$project.rb
 #####compileProject
-    $jrubyc $project_path/src/$project.rb
+    jrubyc --javac $project_path/src/$project.rb
