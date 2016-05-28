@@ -35,7 +35,7 @@ jruby: Calls the jruby runtime environment.
 jrubyc --java: Calls the ruby-to-java build environment.  
 jrubyc --javac: Calls the jruby development environment.  
 
-###Common Commands
+###Custom Commands
 #####setProject
     echo "project_path=\"${current.project.path}\"" >> ~/.bashrc &&
     echo "project=\"${current.project.relpath}\"" >> ~/.bashrc
