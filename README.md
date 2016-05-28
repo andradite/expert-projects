@@ -11,7 +11,7 @@ The Custom Command section shows commands that we will be setting up in our IDEs
 
 Follow along with your video or lecture notes to get started!
 
-###Active Commands
+###Bash Commands
 
 cd: Changes current directory to specified directory.  
 ls -lah: Displays the files/folders in current directory.  
